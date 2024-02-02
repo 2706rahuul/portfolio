@@ -38,7 +38,7 @@ function Experience() {
             <strong>Duration:</strong> June 2022 - June 2023
           </p>
           <ul style={{textAlign:"left"}}>
-            <li>Led creation of Marathi’s largest sentiment analysis dataset, L3Cube-MahaSentMD., consisting of more than 20000 training examples. Research published at 2023 International Conference on Machine Learning (ICML).</li>
+            <li>Led creation of Marathi’s largest sentiment analysis dataset, L3Cube-MahaSentMD., consisting of approximately 60000 training examples. Research published at 2023 International Conference on Machine Learning (ICML).</li>
             <li>Innovated data augmentation methods for increase in model accuracy for sentiment analysis models. Pioneered named entity masking with BERT, back-translation and GPT-based sentence/sentiment prediction for data augmentation.</li>
             <li>Led English, Hindi, and Gujarati news summarization: Fine-tuned PEGASUS, BRIO, IndicBART. Achieved top 3 ranks in ILSUM 2022 at FIRE 2022, Kolkata, for all 3 languages.</li>
           </ul>
