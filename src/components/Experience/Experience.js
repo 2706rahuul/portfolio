@@ -12,34 +12,33 @@ function Experience() {
       duration: "January 2025 – May 2025",
       bullets: [
         "Engineered full-stack development for the JVA website, delivering a unified React Native Web front-end backed by Node.js and Sequelize (MySQL).",
-        "Migrated a legacy PHP/Laravel system to a modern Node.js + React stack, boosting scalability for 25 K+ MAUs.",
+        "Migrated a legacy PHP/Laravel system to a modern Node.js + React stack, boosting scalability for 25K monthly active users.",
         "Leveraged AWS RDS to ensure high availability and improved query performance.",
-        "Authored Jest/Cypress suites (>80 % coverage) and JMeter/Postman tests to catch regressions and performance bottlenecks."
-      ]
+        "Authored Jest/Cypress suites and JMeter/Postman tests to catch regressions and performance bottlenecks.",
+      ],
     },
     {
-      title: "Software Engineer",
+      title: "Software Engineer Intern",
       company: "Sara Technology Inc.",
       location: "Los Angeles, CA",
       duration: "May 2024 – December 2024",
       bullets: [
         "Built React Native onboarding and practice pages with rich animations and audio, rolled out to 3 schools and 5 therapists in 2 months.",
-        "Implemented AWS Amplify + GraphQL services and ML pipelines that cut average login times by 40 % and improved therapy-session accuracy by 30 %.",
-        "Streamlined data flow, yielding 25 % faster page transitions for hundreds of users.",
-        "Enhanced the marketing site (React, Next.js, TypeScript), helping the product win a Columbia Business School grant."
-      ]
+        "Built a secure AWS Amplify–powered GraphQL backend and an ML-driven authentication pipeline, accelerating logins while enhancing therapy accuracy and user engagement.",
+        "Enhanced the marketing site (React, Next.js, TypeScript), helping the product win a Columbia Business School grant.",
+      ],
     },
     {
-      title: "Software Developer (Part-time)",
+      title: "Software Engineer Intern",
       company: "Redvest",
       location: "Remote · Los Angeles, CA",
       duration: "May 2024 – August 2024",
       bullets: [
         "Led full-stack delivery of Bankzzz marketplace, converting Wix mock-ups into React components with 98 % pixel accuracy.",
         "Built Firebase + Express.js auth APIs and Venmo payments, scaling to 1.2 K daily transactions.",
-        "Automated SendGrid notifications, slashing response time 5× for marketing.",
-        "Contributed key features that helped Redvest reach 150 K users and a Top 30 Finance-app App Store ranking."
-      ]
+        "Automated SendGrid notifications, slashing response time for marketing to potential customers.",
+        "Contributed key features that helped Redvest reach 150 K users and a Top 30 Finance-app App Store ranking.",
+      ],
     },
     {
       title: "Researcher",
@@ -49,8 +48,8 @@ function Experience() {
       bullets: [
         "Collaborated with Prof. Benjamin Nye on automated college-essay scoring research.",
         "Designed ChatGPT-3.5 prompt-engineering baselines for rubric-based issue detection.",
-        "Authored a Python pipeline to auto-generate and score prompts via the ChatGPT API."
-      ]
+        "Authored a Python pipeline to auto-generate and score prompts via the ChatGPT API.",
+      ],
     },
     {
       title: "Project Intern",
@@ -60,8 +59,8 @@ function Experience() {
       bullets: [
         "Created Marathi’s largest sentiment-analysis corpus (60 K samples) — published at ICML 2023.",
         "Pioneered BERT masking, back-translation, and GPT augmentation to boost SA accuracy.",
-        "Fine-tuned PEGASUS, BRIO, IndicBART for multilingual news summarization; top-3 in ILSUM 2022 (FIRE 2022)."
-      ]
+        "Fine-tuned PEGASUS, BRIO, IndicBART for multilingual news summarization; top-3 in ILSUM 2022 (FIRE 2022).",
+      ],
     },
     {
       title: "Undergraduate Research Assistant",
@@ -73,8 +72,8 @@ function Experience() {
         "1st place, DravidianLangTech (ACL 2022) for neural MT work on Dravidian languages.",
         "Published medical-literature summarization at COLING 2022 (92 % ROUGE-L).",
         "Unsupervised MT for German/Sorbian variants (WMT-EMNLP 2022).",
-        "State-of-the-art multilingual image-captioning (CGIP 2023)."
-      ]
+        "State-of-the-art multilingual image-captioning (CGIP 2023).",
+      ],
     },
     {
       title: "Software Engineering Intern",
@@ -82,22 +81,22 @@ function Experience() {
       location: "Remote · Pune, India",
       duration: "January 2022 – December 2022",
       bullets: [
-        "Launched an ML-driven interview-assessment platform for real-time speech evaluation.",
+        "Part of the core team that built an ML-driven interview-assessment platform for real-time speech evaluation.",
         "Migrated LUIS → Azure CLU, boosting scalability and accuracy.",
         "Built a responsive Angular + Node.js front-end with reusable UI libraries.",
-        "Integrated RESTful APIs for reliable, efficient data flow."
-      ]
+        "Integrated RESTful APIs for reliable, efficient data flow.",
+      ],
     },
     {
-      title: "Machine Learning Intern",
+      title: "ML Intern",
       company: "ResoluteAI.in",
       location: "Bengaluru, India",
       duration: "October 2021 – January 2022",
       bullets: [
         "Developed a real-time video system to gauge dock-loading efficiency (97 % accuracy).",
-        "Led a 5-member team on a textile CV project, achieving 96 % accuracy with a robust ML pipeline."
-      ]
-    }
+        "Led a 5-member team on a textile CV project, achieving 96 % accuracy with a robust ML pipeline.",
+      ],
+    },
   ];
 
   return (
@@ -115,7 +114,7 @@ function Experience() {
             style={{
               justifyContent: "center",
               paddingBottom: "10px",
-              marginBottom: "35px"
+              marginBottom: "35px",
             }}
           >
             <h3>{exp.title}</h3>
