@@ -15,11 +15,8 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          <strong className="purple">Publications and Projects </strong>
+          <strong className="purple">Publications</strong>
         </h1>
-        <h3 style={{ color: "white", marginTop: "70px" }}>
-          My Research Contributions
-        </h3>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
@@ -50,7 +47,7 @@ function Projects() {
               title="PICT@ DravidianLangTech-ACL2022: Neural machine translation on dravidian languages"
               description="This paper highlights our success in the Dravidian language translation task, achieving top rankings in three of five sub-tasks. We employed various models, including Seq2Seq and transformers, trained and fine-tuned for accuracy using BLEU scores. Paper published at DravidianLangTech, a workshop in collaboration with ACL 2022."
               ghLink="https://aclanthology.org/2022.dravidianlangtech-1.28/"
-              // demoLink="https://editor.soumya-jit.tech/"              
+              // demoLink="https://editor.soumya-jit.tech/"
             />
           </Col>
 
@@ -85,7 +82,7 @@ function Projects() {
               description="
               This research focuses on abstractive summarization of medical documents, addressing challenges with domain-specific jargon. Using pre-trained models like BART-large and T5-base, we achieved fourth place in MSLR leaderboard evaluations on MS^2 and Cochrane datasets, validated through ROUGE scores."
               ghLink="https://aclanthology.org/2022.sdp-1.24/"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here
             />
           </Col>
 
@@ -96,7 +93,7 @@ function Projects() {
               title="Unsupervised and Very-Low Resource Supervised Translation on German and Sorbian Variant Languages"
               description="Team PICT-NLP's work, presented for the EMNLP 2022 shared task, focuses on unsupervised and low-resource supervised machine translation. We employed transformer architecture for supervised learning and Facebook's XLM for unsupervised learning, achieving noteworthy results across six language pairs. Evaluated using BLEU and chrF metrics."
               ghLink="https://aclanthology.org/2022.wmt-1.108/"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here
             />
           </Col>
 
@@ -107,34 +104,8 @@ function Projects() {
               title="Trinity at SemEval-2023 Task 12: Sentiment Analysis for Low-resource African Languages using Twitter Dataset"
               description="This research explores sentiment analysis in three African languages (Hausa, Swahili, Yoruba) using deep learning and traditional models. We applied data oversampling for imbalanced data and assessed model performance with weighted and macro F1 scores."
               ghLink="https://aclanthology.org/2023.semeval-1.161/"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here
             />
-          </Col>
-        </Row>
-        <h3 style={{ color: "white" }}>
-          Projects that I've worked on
-        </h3>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-              <ProjectCard
-                imgPath={emotion}
-                isBlog={false}
-                title="Strategic Talent Retention using ML"
-                description="Implemented a strategic talent retention solution using scikit-learn, pandas, and XGBoost for accurate prediction. Built REST APIs with Flask, while the front-end utilized HTML, CSS, JS, and Bootstrap. Hosted on AWS EC2 with nginx, achieving a 99.23% accuracy through hyperparameter tuning."
-                // ghLink="https://aclanthology.org/2023.semeval-1.161/"
-                // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-              />
-          </Col>
-          <Col md={4} className="project-card">
-              <ProjectCard
-                imgPath={emotion}
-                isBlog={false}
-                title="Image Captioning Systems for Dravidian Languages"
-                description="
-                Developed attention-based merge models for image captioning in 4 Dravidian languages using Python, PyTorch, and nltk. Utilized ResNet50, VGG16, and InceptionV3 for image feature extraction, with LSTM, Simple RNNs, and GRUs for caption generation. Trained 36 models, optimizing for BLEU scores. Published research at CGIP 2023."
-                // ghLink="https://aclanthology.org/2023.semeval-1.161/"
-                // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-              />
           </Col>
         </Row>
       </Container>

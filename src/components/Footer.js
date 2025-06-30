@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
 import { SiGooglescholar } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -50,16 +49,6 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/rahuul_2706/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
               </a>
             </li>
           </ul>
