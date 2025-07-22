@@ -11,8 +11,8 @@ function Experience() {
       location: "Los Angeles, CA",
       duration: "January 2025 – May 2025",
       bullets: [
-        "Engineered full-stack development for the JVA website, delivering a unified React Native Web front-end backed by Node.js and Sequelize (MySQL).",
-        "Migrated a legacy PHP/Laravel system to a modern Node.js + React stack, boosting scalability for 25K monthly active users.",
+        "Engineered full-stack development for the JVA website, delivering a unified Next.js front-end backed by Node.js and Sequelize (MySQL).",
+        "Migrated a legacy PHP + React system to a modern Node.js + Next.js stack, boosting scalability for 25K monthly active users.",
         "Leveraged AWS RDS to ensure high availability and improved query performance.",
         "Authored Jest/Cypress suites and JMeter/Postman tests to catch regressions and performance bottlenecks.",
       ],
