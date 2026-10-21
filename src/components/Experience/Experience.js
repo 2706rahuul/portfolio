@@ -2,135 +2,87 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Particle from "../Particle";
 
-function Experience() {
-  // ✨ Central place to manage or extend your work-experience data
-  const experiences = [
-    {
-      title: "Full Stack Developer Intern",
-      company: "Sumeru Inc.",
-      location: "Los Angeles, CA",
-      duration: "January 2025 – May 2025",
-      bullets: [
-        "Engineered full-stack development for the JVA website, delivering a unified Next.js front-end backed by Node.js and Sequelize (MySQL).",
-        "Migrated a legacy PHP + React system to a modern Node.js + Next.js stack, boosting scalability for 25K monthly active users.",
-        "Leveraged AWS RDS to ensure high availability and improved query performance.",
-        "Authored Jest/Cypress suites and JMeter/Postman tests to catch regressions and performance bottlenecks.",
-      ],
-    },
-    {
-      title: "Software Engineer Intern",
-      company: "Sara Technology Inc.",
-      location: "Los Angeles, CA",
-      duration: "May 2024 – December 2024",
-      bullets: [
-        "Built React Native onboarding and practice pages with rich animations and audio, rolled out to 3 schools and 5 therapists in 2 months.",
-        "Built a secure AWS Amplify–powered GraphQL backend and an ML-driven authentication pipeline, accelerating logins while enhancing therapy accuracy and user engagement.",
-        "Enhanced the marketing site (React, Next.js, TypeScript), helping the product win a Columbia Business School grant.",
-      ],
-    },
-    {
-      title: "Software Engineer Intern",
-      company: "Redvest",
-      location: "Remote · Los Angeles, CA",
-      duration: "May 2024 – August 2024",
-      bullets: [
-        "Led full-stack delivery of Bankzzz marketplace, converting Wix mock-ups into React components with 98 % pixel accuracy.",
-        "Built Firebase + Express.js auth APIs and Venmo payments, scaling to 1.2 K daily transactions.",
-        "Automated SendGrid notifications, slashing response time for marketing to potential customers.",
-        "Contributed key features that helped Redvest reach 150 K users and a Top 30 Finance-app App Store ranking.",
-      ],
-    },
-    {
-      title: "Researcher",
-      company: "USC Information Sciences Institute",
-      location: "Remote · Los Angeles, CA",
-      duration: "September 2023 – February 2024",
-      bullets: [
-        "Collaborated with Prof. Benjamin Nye on automated college-essay scoring research.",
-        "Designed ChatGPT-3.5 prompt-engineering baselines for rubric-based issue detection.",
-        "Authored a Python pipeline to auto-generate and score prompts via the ChatGPT API.",
-      ],
-    },
-    {
-      title: "Project Intern",
-      company: "L3Cube Pune",
-      location: "Pune, India",
-      duration: "June 2022 – June 2023",
-      bullets: [
-        "Created Marathi’s largest sentiment-analysis corpus (60 K samples) — published at ICML 2023.",
-        "Pioneered BERT masking, back-translation, and GPT augmentation to boost SA accuracy.",
-        "Fine-tuned PEGASUS, BRIO, IndicBART for multilingual news summarization; top-3 in ILSUM 2022 (FIRE 2022).",
-      ],
-    },
-    {
-      title: "Undergraduate Research Assistant",
-      company: "Pune Institute of Computer Technology",
-      location: "Pune, India",
-      duration: "October 2021 – May 2023",
-      bullets: [
-        "Mentored five juniors on NLP research projects.",
-        "1st place, DravidianLangTech (ACL 2022) for neural MT work on Dravidian languages.",
-        "Published medical-literature summarization at COLING 2022 (92 % ROUGE-L).",
-        "Unsupervised MT for German/Sorbian variants (WMT-EMNLP 2022).",
-        "State-of-the-art multilingual image-captioning (CGIP 2023).",
-      ],
-    },
-    {
-      title: "Software Engineering Intern",
-      company: "iMocha",
-      location: "Remote · Pune, India",
-      duration: "January 2022 – December 2022",
-      bullets: [
-        "Part of the core team that built an ML-driven interview-assessment platform for real-time speech evaluation.",
-        "Migrated LUIS → Azure CLU, boosting scalability and accuracy.",
-        "Built a responsive Angular + Node.js front-end with reusable UI libraries.",
-        "Integrated RESTful APIs for reliable, efficient data flow.",
-      ],
-    },
-    {
-      title: "ML Intern",
-      company: "ResoluteAI.in",
-      location: "Bengaluru, India",
-      duration: "October 2021 – January 2022",
-      bullets: [
-        "Developed a real-time video system to gauge dock-loading efficiency (97 % accuracy).",
-        "Led a 5-member team on a textile CV project, achieving 96 % accuracy with a robust ML pipeline.",
-      ],
-    },
-  ];
+export const experiences = [
+  {
+    title: "Founding Software Engineer",
+    company: "OneHermes",
+    location: "Madison, WI",
+    duration: "June 2026 – Present",
+    bullets: [
+      "Shipped 300+ feature tickets, production enhancements, and fixes for an enterprise workforce-management platform built with Angular, Node.js, Express, and MongoDB.",
+      "Engineered scheduling, overnight clock-in/out, shift conflicts, role-based approvals, leave, timesheets, and workforce workflows.",
+      "Developed and tested healthcare Patient Care and electronic visit verification (EVV) integrations, including API-driven validation and frontend/backend data flows.",
+      "Owned customer issues across 3+ environments, from requirements and root-cause analysis through testing, release validation, and follow-up.",
+    ],
+  },
+  {
+    title: "Research Software Engineer",
+    company: "University of Southern California",
+    location: "Los Angeles, CA",
+    duration: "August 2025 – June 2026",
+    bullets: [
+      "Built Tommy, an AI-powered assistant deployed on USC's Office of International Services website to answer F-1/J-1 immigration questions, handling 2,000+ student queries/month.",
+      "Developed ingestion and web-scraping pipelines across 15+ university and government sources to keep the assistant's knowledge base current.",
+      "Designed a human-in-the-loop feedback workflow using response ratings and conversation logs to find failures and improve answer quality.",
+    ],
+  },
+  {
+    title: "Full Stack Developer Intern",
+    company: "Sumeru Inc.",
+    location: "Los Angeles, CA",
+    duration: "January 2025 – May 2025",
+    bullets: [
+      "Migrated a client platform serving 25,000+ monthly active users from legacy PHP to Next.js and Node.js, building reusable UI components, APIs, and business logic.",
+      "Reduced P95 API response time from 1.8 seconds to 650 milliseconds by optimizing backend request handling, database queries, and schema design.",
+      "Collaborated with customer stakeholders to turn feedback into product requirements and production features.",
+    ],
+  },
+  {
+    title: "Software Engineer Intern",
+    company: "Sara Technology Inc.",
+    location: "Los Angeles, CA",
+    duration: "May 2024 – August 2024",
+    bullets: [
+      "Built React Native onboarding and interactive speech-practice experiences with audio, animations, and progress tracking for an app deployed to 3 schools and 5 therapy clinics.",
+      "Contributed to the company's Next.js and TypeScript website and product experience.",
+    ],
+  },
+  {
+    title: "Machine Learning Research Intern",
+    company: "L3Cube",
+    location: "Pune, India",
+    duration: "June 2022 – June 2023",
+    bullets: [
+      "Created and evaluated a multi-domain Marathi sentiment dataset of 60,000+ samples, with human annotations reaching 0.86 Cohen's Kappa.",
+      "Fine-tuned MahaBERT, mBERT, MuRIL, and IndicBERT for low-resource classification, reaching up to 84.9% accuracy with MahaBERT.",
+      "Explored back-translation, paraphrasing, BERT masking, NER masking, and GPT-based data augmentation for cross-domain robustness.",
+    ],
+  },
+];
 
+function Experience() {
   return (
-    <Container fluid className="project-section" style={{ color: "white" }}>
+    <Container fluid className="project-section experience-section">
       <Particle />
       <Container>
-        <h1 className="work-experience-heading">
-          <strong className="purple">Work Experience</strong>
-        </h1>
-
-        {experiences.map((exp, idx) => (
-          <div
-            key={idx}
-            className="work-experience-item"
-            style={{
-              justifyContent: "center",
-              paddingBottom: "10px",
-              marginBottom: "35px",
-            }}
-          >
-            <h3>{exp.title}</h3>
-            <p>
-              <strong>Company:</strong> {exp.company}
-            </p>
-            <p style={{ marginTop: "-16px" }}>
-              <strong>Duration:</strong> {exp.duration}
-            </p>
-            <ul style={{ textAlign: "left" }}>
-              {exp.bullets.map((b, i) => (
-                <li key={i}>{b}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        <h1 className="project-heading">Professional <strong className="purple">Experience</strong></h1>
+        <p className="section-intro">Shipping customer-facing software and researching practical language technologies.</p>
+        <div className="experience-list">
+          {experiences.map((exp) => (
+            <article className="work-experience-item" key={`${exp.company}-${exp.title}`}>
+              <div className="experience-topline">
+                <div>
+                  <h2>{exp.title}</h2>
+                  <p className="experience-company">{exp.company} · {exp.location}</p>
+                </div>
+                <span className="experience-duration">{exp.duration}</span>
+              </div>
+              <ul>
+                {exp.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
+              </ul>
+            </article>
+          ))}
+        </div>
       </Container>
     </Container>
   );

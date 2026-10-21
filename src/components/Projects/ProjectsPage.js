@@ -1,10 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import ProjectCardNew from "./ProjectCardNew";
 
-// Update this array with your real projects.
-const PROJECTS = [
+export const PROJECTS = [
+  {
+    title: "MedAssist AI — Agentic Medical Assistant",
+    featured: true,
+    techStack: ["LangGraph", "FastAPI", "Next.js", "Pinecone", "OpenAI"],
+    bulletPoints: [
+      "Built an eight-tool agentic assistant integrating NIH, FDA, and NPI APIs; reached 94.3% routing accuracy across 35 synthetic evaluation cases.",
+      "Combined domain APIs, retrieval across 23,489 Pinecone document chunks, and LLM fallback with source-aware responses and SSE streaming.",
+      "Developed an 11-category LLM-as-Judge evaluation (4.37/5 correctness) and a Next.js interface with JWT authentication."
+    ]
+  },
+  {
+    title: "LLM Research Assistant — RAG Document Intelligence",
+    featured: true,
+    techStack: ["LangGraph", "LangChain", "OpenAI", "Pinecone", "Cohere", "Next.js"],
+    bulletPoints: [
+      "Built a document research assistant that achieved 93.75% faithfulness and 97.32% answer correctness on a 20-case LLM-as-Judge suite.",
+      "Developed multi-stage retrieval with embeddings, vector search, reranking, LLM document grading, and web-search fallback.",
+      "Supported MCP tool integrations and streaming conversational responses."
+    ]
+  },
+  {
+    title: "Continual Learning for Multilingual NER",
+    featured: true,
+    techStack: ["Python", "PyTorch", "mBERT", "Hugging Face", "WikiANN"],
+    bulletPoints: [
+      "Studied catastrophic forgetting while sequentially fine-tuning mBERT on English, Spanish, and Hebrew NER datasets.",
+      "Applied Experience Replay to achieve F1 scores of 0.811 (English), 0.911 (Spanish), and 0.824 (Hebrew).",
+      "Evaluated forward/backward transfer and reduced English forgetting to approximately 0.019 F1 with Experience Replay."
+    ]
+  },
   {
     title: "Self‑Hosted AI Text‑to‑Speech & Voice Conversion Platform",
     techStack: ["PyTorch", "FastAPI", "Next.js", "AWS", "Docker", "StyleTTS2"],
@@ -145,14 +174,6 @@ const PROJECTS = [
     ]
   },
   {
-    title: "Continual Learning mBERT NER",
-    techStack: ["PyTorch", "mBERT", "Experience Replay", "WikiANN"],
-    bulletPoints: [
-      "Continual‑learning framework preventing catastrophic forgetting across EN/ES/HE languages.",
-      "Raised NER F1‑scores to 81% (EN), 91% (ES) and 82% (HE) with <2% backward transfer drop."
-    ]
-  },
-  {
     title: "Credit Risk Classifier Optimization",
     techStack: ["Python", "CatBoost", "LightGBM", "XGBoost", "PyTorch", "Polars"],
     bulletPoints: [
@@ -163,6 +184,9 @@ const PROJECTS = [
 ];
 
 function ProjectsPage() {
+  const [showAll, setShowAll] = useState(false);
+  const visibleProjects = showAll ? PROJECTS : PROJECTS.slice(0, 6);
+
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -170,13 +194,21 @@ function ProjectsPage() {
         <h1 className="project-heading">
           <strong className="purple">Projects</strong>
         </h1>
+        <p className="section-intro">
+          Recent AI work and selected full-stack, mobile, and systems projects.
+        </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {PROJECTS.map((proj) => (
+          {visibleProjects.map((proj) => (
             <Col key={proj.title} md={4} className="project-card">
               <ProjectCardNew {...proj} />
             </Col>
           ))}
         </Row>
+        {PROJECTS.length > 6 && (
+          <button className="portfolio-show-more" type="button" onClick={() => setShowAll(!showAll)}>
+            {showAll ? "Show featured selection" : `Show all ${PROJECTS.length} projects`}
+          </button>
+        )}
       </Container>
     </Container>
   );

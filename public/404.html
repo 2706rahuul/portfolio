@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Returning to portfolio…</title>
+  <script>
+    (function () {
+      var location = window.location;
+      var target = location.pathname + location.search + location.hash;
+      location.replace(location.origin + "/portfolio/?redirect=" + encodeURIComponent(target));
+    }());
+  </script>
+</head>
+<body>
+  <p>Redirecting to the <a href="/portfolio/">portfolio home page</a>…</p>
+</body>
+</html>

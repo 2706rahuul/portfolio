@@ -1,46 +1,24 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
-/* developer, DevOps & cloud tools */
-import {
-  SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
-  SiDocker,
-  SiGooglecloud,
-  SiFirebase,
-  SiAmazonaws,
-  SiMacos,
-} from "react-icons/si";
-import {
-  FaGithub,
-  FaLinux,
-  FaAws,
-  FaGitAlt,
-} from "react-icons/fa";
+const TOOL_GROUPS = [
+  { title: "Cloud & Deployment", items: ["AWS", "Google Cloud", "Vercel", "Railway", "Docker"] },
+  { title: "Development", items: ["Git", "GitHub", "Postman", "VS Code", "Linux"] },
+];
 
 function Toolstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {/* OS & Source Control */}
-      <Col xs={4} md={2} className="tech-icons"><SiMacos /></Col>
-      <Col xs={4} md={2} className="tech-icons"><FaLinux /></Col>
-      <Col xs={4} md={2} className="tech-icons"><FaGithub /></Col>
-      <Col xs={4} md={2} className="tech-icons"><FaGitAlt /></Col>
-
-      {/* IDE / Collaboration */}
-      <Col xs={4} md={2} className="tech-icons"><SiVisualstudiocode /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiPostman /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiSlack /></Col>
-
-      {/* Hosting / DevOps */}
-      <Col xs={4} md={2} className="tech-icons"><SiVercel /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiDocker /></Col>
-      <Col xs={4} md={2} className="tech-icons"><FaAws /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiAmazonaws /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiGooglecloud /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiFirebase /></Col>
+    <Row className="skill-grid">
+      {TOOL_GROUPS.map((group) => (
+        <Col key={group.title} md={6} className="skill-grid-column">
+          <section className="skill-group">
+            <h3>{group.title}</h3>
+            <div className="skill-tags">
+              {group.items.map((item) => <span className="skill-tag" key={item}>{item}</span>)}
+            </div>
+          </section>
+        </Col>
+      ))}
     </Row>
   );
 }

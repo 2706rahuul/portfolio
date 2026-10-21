@@ -1,10 +1,7 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
 import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 
 function About() {
@@ -12,18 +9,16 @@ function About() {
     <Container fluid className="about-section">
       <Particle />
       <Container>
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
-        </h1>
-
+        <h1 className="project-heading">About <strong className="purple">Me</strong></h1>
+        <p className="section-intro">
+          I'm a USC M.S. Computer Science graduate (May 2025) and a software engineer
+          working across full-stack systems, applied AI, NLP, and healthcare technology.
+          I earned my B.E. in Computer Engineering from Pune Institute of Computer Technology in 2023.
+        </p>
+        <h2 className="project-heading">Technical <strong className="purple">Skills</strong></h2>
         <Techstack />
-
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
+        <h2 className="project-heading">Cloud &amp; <strong className="purple">Developer Tools</strong></h2>
         <Toolstack />
-
-        {/* <Github /> */}
       </Container>
     </Container>
   );
